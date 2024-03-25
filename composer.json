@@ -1,0 +1,31 @@
+{
+  "autoload": {
+    "files": [
+      "./app/helpers.php"
+    ],
+    "psr-4": {
+      "app\\": "app",
+      "DB\\": "app/Db/"
+    }
+  },
+  "require": {
+    "slim/slim": "4.*",
+    "illuminate/database": "^10.47",
+    "illuminate/events": "v10.41.0",
+    "guzzlehttp/psr7": "^2",
+    "php-di/php-di": "^7.0",
+    "jenssegers/blade": "^2.0",
+    "ext-pdo": "*",
+    "jeremykendall/slim-auth": "^1.0",
+    "nyholm/psr7": "*",
+    "nyholm/psr7-server": "*",
+    "psr/http-message": "*",
+    "phpmailer/phpmailer": "^6.9"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "*"
+  },
+  "scripts": {
+    "start": "php -S localhost:8081 -t public"
+  }
+}
